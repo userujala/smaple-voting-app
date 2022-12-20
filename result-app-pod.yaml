@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: result-app-pod
+  labels:
+    name: result-app-pod
+    app: sample-voting-app
+spec:
+  containers:
+    - name: result-app
+      image: ujalasap/result-app:v1
+      ports:
+        - containerPort: 80
+      
